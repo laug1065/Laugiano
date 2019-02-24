@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bisto babushka</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <style>
+        * {
+
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: #F2EFEB;
+
+
+        }
+
+        .retter {
+            text-align: center;
+            margin: 20px;
+
+
+
+        }
+
+        #logo {
+            position: absolute;
+            width: 119px;
+            left: 10px;
+
+
+
+            top: 0px;
+
+
+        }
+
+
+        h1 {
+            margin: -10px;
+
+            text-align: center;
+            color: rgba(127, 255, 212, 0);
+
+        }
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+            margin-left: 57px;
+            margin-right: 25px;
+            font-size: 1.35rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            width: 100%;
+
+
+        }
+
+        .valgt {
+
+            border-bottom: 1px black solid;
+
+
+        }
+
+
+
+        .menu {
+            text-align: center;
+            margin-bottom: 0px;
+
+
+
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            text-align: left;
+            margin-left: 59px;
+            margin-right: 20px;
+
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+
+
+
+        }
+
+        #button {
+            text-decoration: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        #button:hover {
+            text-decoration: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            color: #989898;
+
+
+        }
+
+        #footer_colour {
+
+            bottom: 0;
+
+
+            color: aqua;
+
+            background-color: #535353;
+            position: fixed;
+            z-index: 0;
+            width: 100%;
+            height: 6.8%;
+
+
+
+
+        }
+
+        #hent_cv {
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            z-index: 99;
+
+
+            /*    margin: 0px 610px 0px 0px;*/
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            color: #F2EFEB;
+            background-color: rgb(66, 186, 108);
+            font-size: 0.6rem;
+            cursor: pointer;
+            margin: 30px 0px 6.5px 60px;
+            bottom: 0;
+
+
+        }
+
+        #info {
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            z-index: 99;
+            font-size: 0.5rem;
+
+
+
+            padding: 18px 0px 0px 252px;
+            margin: 10px 0px 5px 0px;
+
+            color: #F2EFEB;
+            bottom: 0;
+
+
+
+
+        }
+
+        #luk {
+            box-sizing: border-box;
+            text-align: right;
+            padding-right: 1em;
+        }
+
+        #luk button {
+            font-size: 2em;
+        }
+
+        #popup {
+            width: 100vw;
+            height: 93.07%;
+            /*            background-color: rgb(242, 239, 235);*/
+            background-image: linear-gradient(#561515, #F2EFEB);
+            text-align: center;
+            display: none;
+            position: fixed;
+            z-index: 99;
+            /*            margin: 85px 0px 0px 0px;*/
+
+
+
+        }
+
+
+
+        .filter {
+            text-decoration: none;
+            background-color: #F2EFEB;
+            border: none;
+
+        }
+
+
+
+        #liste {
+
+            text-align: center;
+            margin: 22px 0px 0px 0px;
+        }
+
+        #splash_billede img {
+            width: 100%;
+        }
+
+        .hidden {
+
+            transform: translateX(-150%);
+
+        }
+
+
+
+        #menuknap {
+
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            right: 30px;
+            top: 32px;
+            font-size: 1.5rem;
+            color: #F2EFEB;
+
+        }
+
+        #menu {
+
+
+            z-index: 1000;
+            text-decoration: none;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            list-style-type: none;
+            transition: transform 0.5s;
+            text-align: left;
+            background-color: rgb(255, 255, 255);
+            padding: 79px 100px 0px 50px;
+
+            height: 100%;
+            /*
+    margin-top: 0px;
+    margin-left: 0px;*/
+
+            /*    background-image: linear-gradient(to right, rgb(33, 33, 33), #4a4a4a);*/
+            background-color: #561515;
+
+
+
+        }
+
+        a {
+
+            text-decoration: none;
+
+
+            color: #F2EFEB;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
+
+
+        @media only screen and (min-width: 375px) {
+
+
+
+            img {
+                width: 70%;
+
+            }
+
+            #logo {
+                width: 33%;
+            }
+
+
+
+        }
+
+
+
+        @media only screen and (min-width: 768px) {
+
+
+            h2 {
+
+                margin: 0px 0px 0px 40px;
+            }
+
+            p {
+
+                margin: 10px 0px 10px 40px;
+
+
+            }
+
+            #liste {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            #mursten {}
+
+
+
+            #logo {
+                width: 10%;
+            }
+
+            #hent_cv {
+
+                margin: 30px 0px 9px 60px;
+
+
+            }
+
+            #info {
+
+
+
+                padding: 18px 0px 0px 600px;
+                margin: 10px 0px 9px 0px;
+
+            }
+
+            #footer_colour {
+                bottom: 0;
+
+
+                color: aqua;
+
+                background-color: #535353;
+                position: fixed;
+                z-index: 0;
+                width: 100%;
+                height: 5%;
+            }
+
+        }
+
+        @media only screen and (min-width: 1920px) {
+
+
+            #hent_cv {
+
+                margin: 30px 0px 9px 60px;
+
+
+            }
+
+            #info {
+
+
+
+                padding: 18px 0px 0px 1770px;
+                margin: 10px 0px 9px 0px;
+
+            }
+
+            #footer_colour {
+
+                width: 100%;
+                height: 4.3%;
+            }
+
+        }
+
+        h2 {
+
+            margin: 0px 0px 0px 97px;
+        }
+
+        p {
+
+            margin: 10px 0px 10px 97px;
+
+
+        }
+
+
+        @media only screen and (min-width: 1680px) {
+
+
+            #hent_cv {
+
+                margin: 30px 0px 9px 60px;
+
+
+            }
+
+            #info {
+
+
+
+                padding: 18px 0px 0px 1550px;
+                margin: 10px 0px 9px 0px;
+
+            }
+
+            #footer_colour {
+
+                width: 100%;
+                height: 5%;
+            }
+
+            h2 {
+
+                margin: 0px 0px 0px 86px;
+            }
+
+            p {
+
+                margin: 10px 0px 10px 86px;
+
+
+            }
+
+            #logo {
+
+                width: 248px;
+
+            }
+
+            #hent_cv {
+
+                margin: 30px 0px 9px 83px;
+
+
+            }
+
+            #info {
+
+
+
+                padding: 18px 0px 0px 1522px;
+                margin: 10px 0px 9px 0px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="popup">
+        <div id="luk"><button>X</button></div>
+        <div id="indhold">
+        </div>
+    </div>
+
+
+
+    <header id="header">
+
+        <!--
+        <div id="mursten">
+            <img style="width: 100%;" src="menu_splash/mobil_header.png" alt="logo">
+        </div>
+-->
+
+        <div id="logo">
+            <img src="logo/Laugiano_logo.svg" alt="logo">
+        </div>
+
+
+    </header>
+
+
+    <div id="menuknap">☰</div>
+    <ul id="menu" class="hidden">
+        <li><a href="index_copy.html">Menu</a></li>
+
+        <a>
+            <li>Forside</li>
+            <a href="forside.html">
+                <li>Reservationer</li>
+            </a>
+
+
+
+        </a>
+
+
+
+    </ul>
+
+
+
+    <section id=splash>
+
+
+        <div id="splash_billede">
+            <picture>
+
+                <!--                    <source media="(min-width: 1080px)" srcset="menu_splash/splash-assets/splash_desktop1.png">-->
+
+                <source media="(min-width: 1920px)" srcset="menu_splash/menu-assets/menubillede.jpg">
+
+                <source media="(min-width: 768px)" srcset="menu_splash/menu-assets/menubillede.jpg">
+
+                <source media="(min-width: 375px)" srcset="menu_splash/mobil_header.png">
+
+                <img src="menu_splash/menu-assets/menubillede.jpg" alt="palmer">
+
+            </picture>
+
+
+        </div>
+
+    </section>
+
+
+    <div class="menu">
+        <h1>Alle</h1>
+        <button class="filter" data-hold="forretter">Forretter</button>
+        <button class="filter" data-hold="hovedretter">Hovedretter</button>
+        <button class="filter" data-hold="desserter">Desserter</button>
+        <button class="filter" data-hold="drikkevarer">Drikkevarer</button>
+
+    </div>
+
+
+
+    <main>
+
+        <div id="liste"></div>
+    </main>
+
+
+    <script>
+        let retter = [];
+        let filter = "forretter";
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            let temp = document.querySelector("template");
+
+            async function getJson() {
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=19qcPoM30Plez8c5mQ_aPk_KEQ9wnEoLwiSuQgphhc_0");
+                retter = await jsonData.json();
+                visRetter();
+            }
+
+            function visRetter() {
+                dest.innerHTML = "";
+                retter.forEach(eachRetter => {
+                    if (filter == "forretter" || filter == eachRetter.kategori) {
+
+                        let template =
+                            `<article class "#retter">
+ <img src="Billeder_navngivet/${eachRetter.billede}.jpg" alt="${eachRetter.navn}">
+
+                        <h2>${eachRetter.navn}</h2>
+
+                        <p>${eachRetter.kort}</p>
+<p>Pris: ${eachRetter.pris}</p>
+
+
+    </article>`;
+                        dest.insertAdjacentHTML("beforeend", template);
+
+                        dest.lastElementChild.addEventListener("click", åbn);
+
+
+                        function åbn() {
+                            document.querySelector("#indhold").innerHTML =
+                                `<article class="retter">
+<img src="Billeder_navngivet/${eachRetter.billede}.jpg" alt="${eachRetter.navn}">
+
+<h2>${eachRetter.navn}</h2>
+<p>${eachRetter.lang} </p>
+<p>Pris: ${eachRetter.pris}</p>
+    </article>`;
+                            document.querySelector("#popup").style.display = "block";
+
+                        }
+                    }
+
+
+                })
+            }
+
+            document.querySelector("#luk button").addEventListener("click", () => {
+
+                document.querySelector("#popup").style.display = "none";
+
+            })
+
+            //function vispersoner slut
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                filter = this.getAttribute("data-hold");
+
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.classList.remove("valgt");
+                })
+                this.classList.add("valgt");
+
+                visRetter();
+
+            }
+
+            getJson()
+        }
+
+
+        window.addEventListener("load", sidenVises);
+
+
+
+        function sidenVises() {
+
+            console.log("siden vises!")
+
+            //registrer klik på menu-knap
+
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+        }
+
+
+        function toggleMenu() {
+
+            console.log("Toggle menu")
+
+
+
+            document.querySelector("#menu").classList.toggle("hidden");
+
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+
+
+                //menuen er nu skjult - ændr menuknap til lll
+
+
+                document.querySelector("#menuknap").textContent = "☰"
+
+
+
+            } else {
+                //menuen er nu vist - ændre menukanp til X
+
+
+                document.querySelector("#menuknap").textContent = "☓";
+
+
+
+            }
+        }
+    </script>
+
+    <footer>
+
+        <div id="footer_colour">
+            <div id="hent_cv">Book bord
+            </div>
+
+            <div id="info">Kontakt: <br> (978) 293-3552 <br>
+                eat@laugiano.com
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

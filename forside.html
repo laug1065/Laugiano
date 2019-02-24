@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bisto babushka</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .retter {
+            border: 5px solid black;
+            margin: 5px;
+            padding: 5px;
+            background-color: beige;
+
+
+
+        }
+
+        h1 {
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            width: 100%;
+
+        }
+
+        #om{
+            margin: 0px 20px 0px 20px;
+             max-width: 750px;
+        }
+
+        #logo {
+            position: absolute;
+            width: 107px;
+            left: 10px;
+
+
+            top: 0px;
+
+
+        }
+
+        #splash{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .valgt {
+
+            background-color: rgba(0, 0, 0, 0.44);
+
+
+        }
+
+        p {
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
+        img {
+            width: 100%;
+        }
+
+
+
+        #liste {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        #footer_colour {
+
+            bottom: 0;
+
+
+            color: aqua;
+
+            background-color: #535353;
+            position: fixed;
+            z-index: 0;
+            width: 100%;
+            height: 6.8%;
+
+
+
+
+        }
+
+        #hent_cv {
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            z-index: 99;
+
+
+            /*    margin: 0px 610px 0px 0px;*/
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            color: #F2EFEB;
+            background-color: rgb(66, 186, 108);
+            font-size: 0.6rem;
+            cursor: pointer;
+            margin: 30px 0px 6.5px 60px;
+            bottom: 0;
+
+
+        }
+
+        #info {
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            z-index: 99;
+            font-size: 0.5rem;
+
+
+
+            padding: 18px 0px 0px 252px;
+            margin: 10px 0px 5px 0px;
+
+            color: #F2EFEB;
+            bottom: 0;
+
+
+
+
+        }
+
+
+
+
+        @media only screen and (min-width: 768px) {
+
+
+
+         p{
+
+             margin-left: 50px;
+             margin-bottom: 100px;
+
+         }
+            h1{
+                margin-left: 50px;
+                margin-top: 20px;
+
+            }
+
+            #footer_colour{
+
+                      bottom: 0;
+
+
+            color: aqua;
+
+            background-color: #535353;
+            position: fixed;
+            z-index: 0;
+            width: 100%;
+            height: 4.6%;
+
+
+            }
+
+            #info{
+
+
+
+
+            padding: 18px 0px 0px 650px;
+            margin: 10px 0px 5px 0px;
+
+
+
+            }
+
+                    #hent_cv {
+
+            margin: 30px 0px 6.5px 70px;
+
+
+        }
+
+            #logo{
+
+                width: 200px;
+            }
+
+    }
+
+        @media only screen and (min-width: 1920px) {
+
+
+
+            #om{
+
+              margin:  0px 0px 0px 600px;
+            }
+            p{
+                font-size: 1.5rem;
+
+            }
+            h1{
+            font-size: 2rem;
+
+            }
+
+            #footer_colour{
+
+                      bottom: 0;
+
+
+            color: aqua;
+
+            background-color: #535353;
+            position: fixed;
+            z-index: 0;
+            width: 100%;
+            height: 4%;
+
+
+            }
+
+            #info{
+
+
+
+
+            padding: 18px 0px 0px 1780px;
+            margin: 10px 0px 5px 0px;
+
+
+
+            }
+
+                    #hent_cv {
+
+            margin: 30px 0px 6.5px 70px;
+
+
+        }
+
+            #logo{
+
+                width: 190px;
+            }
+
+    }
+
+        .hidden {
+
+    transform: translateX(-150%);
+
+}
+
+
+
+#menuknap {
+
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    font-size: 1.5rem;
+    color: #F2EFEB;
+
+}
+
+        #menu {
+
+
+    z-index: 1000;
+            text-decoration: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    transition: transform 0.5s;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    padding: 79px 100px 0px 50px;
+
+    height: 100%;
+    /*
+    margin-top: 0px;
+    margin-left: 0px;*/
+
+    /*    background-image: linear-gradient(to right, rgb(33, 33, 33), #4a4a4a);*/
+    background-color: #561515;
+
+
+
+}
+
+        a {
+
+    text-decoration: none;
+
+
+    color: #F2EFEB;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+<!--        <img style="width: 100%;" src="menu_splash/menu-assets/menubillede.jpg" alt="logo">-->
+        <div id="splash">
+<!--        <img style="width: 100%;" src="menu_splash/splash-assets/splash.jpg" alt="logo">-->
+        </div>
+        <div id="logo">
+            <img src="logo/Laugiano_logo.svg" alt="">
+        </div>
+
+
+
+
+    </header>
+
+
+                <div id="menuknap">☰</div>
+                <ul id="menu" class="hidden">
+                    <li><a href="index_copy.html">Menu</a></li>
+
+                     <a>
+            <li>Forside</li>
+            <a href="forside.html">
+                <li>Reservationer</li>
+            </a>
+
+
+
+        </a>
+
+
+                </ul>
+
+
+
+          <section id=splash>
+
+
+            <div id="splash_billede">
+                <picture>
+
+                    <source media="(min-width: 1080px)" srcset="menu_splash/splash-assets/splash_desktop1.png">
+
+                    <source media="(min-width: 768px)" srcset="menu_splash/splash-assets/ipad_splash.jpg">
+
+                    <source media="(min-width: 375px)" srcset="menu_splash/splash-assets/mobil_splash.jpg">
+
+
+                    <img src="menu_splash/splash-assets/splash.jpg" alt="palmer">
+
+                </picture>
+
+
+            </div>
+
+        </section>
+
+    <section id="om">
+        <h1>Benvenuto a Laugiano</h1> <br>
+        <p>This is a restaurant providing an exceptional blend of spirited cooking and gracious hospitality to our neighbors and friends. <br><br>br
+
+            When the Italians sit down at an osteria they expect a quick, honest, and simple meal made from local produce served alongside a carafe of good wine. It’s the same at Laugiano, our cosy and warm osteria in the middle of old Copenhagen. Menus are short, food is served on platters and in small bowls for sharing, and you can order wine or beer ad libitum without any need for worrying about the check. <br><br> <br>
+
+            Opening hours: <br>
+            Sun–thu 11–9 <br>
+            Fri–sat 11–10</p>
+
+    </section>
+
+
+<!--
+    <div id="liste"></div>
+
+
+
+                        <div id="hent_cv">Book Table
+                        </div>
+
+    <div id="info">Contact: <br> (978) 293-3552
+eat@laugiano.com
+                        </div>
+-->
+
+    <footer>
+
+        <div id="footer_colour">
+            <div id="hent_cv">Book bord
+            </div>
+
+            <div id="info">Kontakt: <br> (978) 293-3552 <br>
+                eat@laugiano.com
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        window.addEventListener("load", sidenVises);
+
+
+
+function sidenVises() {
+
+    console.log("siden vises!")
+
+    //registrer klik på menu-knap
+
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+}
+
+
+function toggleMenu() {
+
+    console.log("Toggle menu")
+
+
+
+    document.querySelector("#menu").classList.toggle("hidden");
+
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+
+
+        //menuen er nu skjult - ændr menuknap til lll
+
+
+        document.querySelector("#menuknap").textContent = "☰"
+
+
+
+    } else {
+        //menuen er nu vist - ændre menukanp til X
+
+
+        document.querySelector("#menuknap").textContent = "☓";
+
+
+
+    }
+}
+
+
+
+//PIL OP-------------------------------------------------------//
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bisto babushka</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .retter {
+            text-align: center;
+            margin: 5px;
+
+
+
+        }
+
+        #logo {
+            position: absolute;
+            width: 119px;
+            left: 10px;
+
+
+
+            top: 0px;
+
+
+        }
+
+
+        h1 {
+            margin: -10px;
+
+            text-align: center;
+            color: rgba(127, 255, 212, 0);
+
+        }
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+            margin-left: 57px;
+            margin-right: 25px;
+            font-size: 1.43rem
+        }
+
+        header {}
+
+        .valgt {
+
+            border-bottom: 1px black solid;
+
+
+        }
+
+        img {
+            width: 70%;
+            margin-top: 20px;
+        }
+
+
+
+        .menu {
+            text-align: center;
+            margin-bottom: 0px;
+
+
+
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            text-align: left;
+            margin-left: 57px;
+            margin-right: 20px;
+            font-size: 0.75rem;
+
+
+
+        }
+
+        button {
+            text-decoration: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        button:hover {
+            text-decoration: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            color: #989898;
+
+
+        }
+
+        #hent_cv {
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            z-index: 99;
+
+
+            /*    margin: 0px 610px 0px 0px;*/
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            color: white;
+            background-color: rgb(66, 186, 108);
+            font-size: 0.6rem;
+            cursor: pointer;
+            margin: 30px 0px 0px 63px;
+
+
+        }
+
+        #info {
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            z-index: 99;
+            font-size: 0.5rem;
+
+
+            padding: 18px 0px 0px 235px;
+            margin: 10px 0px 0px 0px;
+
+            color: #6d6d6d;
+
+
+        }
+
+
+        #hent_cv:hover {
+
+            border: solid 1px rgb(35, 43, 46);
+
+
+            padding: 20px 20px 20px 20px;
+            margin: 20px;
+            text-align: center;
+            color: black;
+            background-color: white;
+            font-size: 0.9em;
+            cursor: pointer;
+            font-weight: 900;
+
+        }
+
+
+
+        #liste {}
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <img style="width: 100%;" src="menu_splash/mobil_header.png" alt="logo">
+
+        <div id="logo">
+            <img src="logo/Laugiano_logo.svg" alt="">
+        </div>
+
+
+    </header>
+
+
+    <div class="menu">
+        <h1>Alle</h1>
+        <button class="filter valgt" data-hold="forretter">Forretter</button>
+        <button class="filter" data-hold="hovedretter">Hovedretter</button>
+        <button class="filter" data-hold="desserter">Desserter</button>
+        <button class="filter" data-hold="drikkevarer">Drikkevarer</button>
+
+    </div>
+    <div id="liste"></div>
+
+    <div id="hent_cv">Book Table
+    </div>
+
+    <div id="info">Contact: <br> (978) 293-3552 <br>
+        eat@laugiano.com
+    </div>
+
+
+    <script>
+        let alleRetter = [];
+        let filter = "alle";
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            let temp = document.querySelector("template");
+
+            async function getJson() {
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=19qcPoM30Plez8c5mQ_aPk_KEQ9wnEoLwiSuQgphhc_0");
+                alleRetter = await jsonData.json();
+                alleRetter.sort((a, b) => {
+
+                    return a.id.localeCompare(b.id);
+                })
+                visRetter();
+            }
+
+            function visRetter() {
+                dest.innerHTML = "";
+
+                alleRetter.forEach(alleRetter => {
+                    if (filter == "alle" || filter == alleRetter.kategori) {
+                        dest.innerHTML += `
+
+                               <div class="retter">
+  <img src="Billeder_navngivet/${alleRetter.billede}.jpg" alt="${alleRetter.navn}">
+
+
+                        <h2>${alleRetter.navn}</h2>
+
+                        <p> ${alleRetter.kort}</p>
+ <p>Pris: ${alleRetter.pris}</p>
+
+
+
+
+                        </div>`;
+                    }
+                })
+            }
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                filter = this.getAttribute("data-hold");
+                document.querySelector("h1").textContent = this.textContent;
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.classList.remove("valgt");
+                })
+                this.classList.add("valgt");
+                visRetter();
+            }
+
+
+            getJson();
+        }
+    </script>
+</body>
+
+</html>

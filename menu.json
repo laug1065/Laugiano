@@ -1,0 +1,304 @@
+[
+    {
+        id: 10,
+        kategori: "forretter",
+        navn: "Antipasto Misto Italiano",
+        pris: 175,
+        kort: "Udvalg af italienske specialiteter ",
+        lang: "JHEHBFBHSBHSBDHBSHBSHB",
+        oprindelse: "Italien",
+        billede: "tapas"
+},
+    {
+        id: 12,
+        kategori: "forretter",
+        navn: "Bruschetta gedeost",
+        pris: 55,
+        kort: "Brunristet brød med gedeost.",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "bruschetta2"
+},
+    {
+        id: 14,
+        kategori: "forretter",
+        navn: "Bruschetta tomat feta",
+        pris: 45,
+        kort: "Brunristet brød med tomat og frisk basilikum",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "bruschetta3"
+},
+    {
+        id: 17,
+        kategori: "forretter",
+        navn: "Mozeralla salat",
+        pris: 60,
+        kort: "Bøffelmozzarella med friske bøftomater og basilikum.",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "mozerallasalat"
+},
+    {
+        id: 19,
+        kategori: "forretter",
+        navn: "Mini mozeralla pizza",
+        pris: 69,
+        kort: "Små pizzaer med bøffelmozeralla samt tomatsauce",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza8"
+},
+    {
+        id: 2,
+        kategori: "hovedretter",
+        navn: "Spaghetti alla Pescatora",
+        pris: 95,
+        kort: "spaghetti med pesto og bacon",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "Pasta1",
+        _d180g: " "
+},
+    {
+        id: 21,
+        kategori: "hovedretter",
+        navn: "Spaghetti Alla Carbonara",
+        pris: 95,
+        kort: "Spaghetti med bacon, æggeblommer, parmesan ost i cremet flødesauce",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta2"
+},
+    {
+        id: 25,
+        kategori: "hovedretter",
+        navn: "Spaghetti alla polpette",
+        pris: 95,
+        kort: "Spaghetti med italienke kødboller",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta4"
+},
+    {
+        id: 34,
+        kategori: "hovedretter",
+        navn: "Pasta dello chef",
+        pris: 85,
+        kort: "Pastarør med bacon, trøffel, rucola og fløde.",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta5"
+},
+    {
+        id: 36,
+        kategori: "hovedretter",
+        navn: "Tagliatelle al Mare",
+        pris: 100,
+        kort: "Ravioli med friske rejer",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta7"
+},
+    {
+        id: 38,
+        kategori: "hovedretter",
+        navn: "Penne al melanzana",
+        pris: 70,
+        kort: "Pastarør med auberginer og tomatsuce",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta8"
+},
+    {
+        id: 41,
+        kategori: "hovedretter",
+        navn: "Ravioli porcini e mare",
+        pris: 95,
+        kort: "Spaghetti med alt godt fra havet",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta9",
+        _cztg3: " "
+},
+    {
+        id: 42,
+        kategori: "hovedretter",
+        navn: "Penne al filetto",
+        pris: 95,
+        kort: "Pasta med trævlet kød",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pasta10"
+},
+    {
+        id: 43,
+        kategori: "hovedretter",
+        navn: "Montanara",
+        pris: 95,
+        kort: "Pizza med ost, tomatsauce, salami, champignon og basilikum",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza1"
+},
+    {
+        id: 44,
+        kategori: "hovedretter",
+        navn: "Diavolo",
+        pris: 95,
+        kort: "Pizza med ost, tomatsauce, stærk salami, chili, oliven, grøn peber og rødløg",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza3"
+},
+    {
+        id: 45,
+        kategori: "hovedretter",
+        navn: "Magherita",
+        pris: 79,
+        kort: "Pizza med ost, tomatsauce",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza4"
+},
+    {
+        id: 52,
+        kategori: "hovedretter",
+        navn: "Prosciutto e Funghi",
+        pris: 85,
+        kort: "Pizza med mozeralla skinke parmesan og rocula",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza5"
+},
+    {
+        id: 54,
+        kategori: "hovedretter",
+        navn: "Formaggio",
+        pris: 85,
+        kort: "Frisk mozzarella, gorgonzola, pecorino, parmegianno.",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza6"
+},
+    {
+        id: 55,
+        kategori: "hovedretter",
+        navn: "Pizza Della Casa",
+        pris: 90,
+        kort: "Tomat, frisk mozzarella, kartoffler, spinat",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pizza7"
+},
+    {
+        id: 60,
+        kategori: "drikkevarer",
+        navn: "Brunello di Montalcino",
+        pris: 70,
+        kort: "Rødvin ",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "redwine"
+},
+    {
+        id: 62,
+        kategori: "drikkevarer",
+        navn: "Primitivo Salento",
+        pris: 70,
+        kort: "Rødvin ",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "Redwine2"
+},
+    {
+        id: 65,
+        kategori: "drikkevarer",
+        navn: "Bonterra Rosé",
+        pris: 60,
+        kort: "Rosé",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "rose"
+},
+    {
+        id: 76,
+        kategori: "drikkevarer",
+        navn: "Cyclus Avondale",
+        pris: 70,
+        kort: "Hvidvin",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "hvidvin"
+},
+    {
+        id: 77,
+        kategori: "drikkevarer",
+        navn: "Peroni Nastro Azzurro",
+        pris: 70,
+        kort: "Italiensk øl",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "beer"
+},
+    {
+        id: 78,
+        kategori: "drikkevarer",
+        navn: "Mint Italian Sparkling",
+        pris: 45,
+        kort: "Danskvand med mint",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "danskvand"
+},
+    {
+        id: 79,
+        kategori: "drikkevarer",
+        navn: "Found vandmelon",
+        pris: 40,
+        kort: "Danskvand med vandmelon",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "vandmelonsdrik"
+},
+    {
+        id: 80,
+        kategori: "desserter",
+        navn: "Pennacotta",
+        pris: 70,
+        kort: "Italiensk Pennacotta",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "pennacotta"
+},
+    {
+        id: 81,
+        kategori: "desserter",
+        navn: "Tiramisu",
+        pris: 80,
+        kort: "Tiramisu med kaffe",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "Tiramisu"
+},
+    {
+        id: 82,
+        kategori: "desserter",
+        navn: "Cannoli",
+        pris: 70,
+        kort: "Hjemmelavede Cannoli",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "dessert"
+},
+    {
+        id: 83,
+        kategori: "desserter",
+        navn: "Cookies Baci di Dama",
+        pris: 50,
+        kort: "Cookies med mørk chocolade",
+        lang: "",
+        oprindelse: "Italien",
+        billede: "cookies"
+}
+]
