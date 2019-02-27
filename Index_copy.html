@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Bisto babushka</title>
+    <title>Laugiano</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -20,6 +20,11 @@
 
         }
 
+        #om {
+
+            margin-bottom: 100px;
+        }
+
         .retter {
             text-align: center;
             margin: 20px;
@@ -35,14 +40,15 @@
 
 
 
-            top: 0px;
+            top: 10px;
+            cursor: pointer;
+            z-index: 99;
 
 
         }
 
-
         h1 {
-            margin: -10px;
+            margin: 0px;
 
             text-align: center;
             color: rgba(127, 255, 212, 0);
@@ -67,9 +73,9 @@
 
         .valgt {
 
-            border-bottom: 1px black solid;
-
-
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            border-bottom: solid 3px black;
         }
 
 
@@ -96,6 +102,7 @@
         }
 
         #button {
+            cursor: pointer;
             text-decoration: none;
             border: none;
             font-family: 'Poppins', sans-serif;
@@ -104,6 +111,7 @@
         }
 
         #button:hover {
+            border-bottom: 1 solid black;
             text-decoration: none;
             border: none;
             font-family: 'Poppins', sans-serif;
@@ -117,13 +125,17 @@
             bottom: 0;
 
 
-            color: aqua;
+
 
             background-color: #535353;
             position: fixed;
             z-index: 0;
             width: 100%;
             height: 6.8%;
+
+
+            margin: 0px 0px -1px 0px;
+
 
 
 
@@ -136,7 +148,7 @@
             z-index: 99;
 
 
-            /*    margin: 0px 610px 0px 0px;*/
+            margin: 0px 610px 0px 0px;
             padding: 10px 10px 10px 10px;
             text-align: center;
             color: #F2EFEB;
@@ -172,17 +184,26 @@
             box-sizing: border-box;
             text-align: right;
             padding-right: 1em;
+
         }
 
         #luk button {
             font-size: 2em;
+            color: #F2EFEB;
+            margin-top: 10px;
+            margin-right: 3px;
+            background-color: #535353;
+            border-radius: 10px;
+            border: none;
         }
 
         #popup {
             width: 100vw;
-            height: 93.07%;
+            height: 100%;
             /*            background-color: rgb(242, 239, 235);*/
-            background-image: linear-gradient(#561515, #F2EFEB);
+            /*            background-image: linear-gradient(#561515, #F2EFEB);*/
+
+            background-color: rgba(0, 0, 0, 0.71);
             text-align: center;
             display: none;
             position: fixed;
@@ -193,14 +214,39 @@
 
         }
 
+        #links {
+            position: absolute;
+            line-height: 185px;
+
+            width: 100%;
+            text-align: center;
+            word-spacing: 100px;
+            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
 
 
         .filter {
+            cursor: pointer;
             text-decoration: none;
             background-color: #F2EFEB;
             border: none;
 
         }
+
+        .filter:hover {
+            cursor: pointer;
+            text-decoration: none;
+            background-color: #F2EFEB;
+            border: none;
+            opacity: 0.5;
+            filter: alpha(opacity=50)
+        }
+
+
 
 
 
@@ -219,6 +265,49 @@
             transform: translateX(-150%);
 
         }
+
+        .popup_beskrivelse {
+
+            background-color: #F2EFEB;
+            border-radius: 10px;
+
+
+
+
+
+        }
+
+        .popup_beskrivelse p {
+
+
+            margin: 0px 0px 0px 20px;
+
+
+
+        }
+
+        .popup_beskrivelse h2 {
+
+
+            margin: 0px 0px 0px 20px;
+
+
+
+        }
+
+        .popup_ramme {
+
+            background-color: #F2EFEB;
+            border-radius: 10px;
+            padding: 20px 0px 20px 0px;
+
+            margin-bottom: 20px;
+
+
+        }
+
+
+
 
 
 
@@ -271,6 +360,21 @@
 
         }
 
+        a:hover {
+
+            opacity: 0.5;
+
+            filter: alpha(opacity=50);
+
+            text-decoration: none;
+
+
+            color: #F2EFEB;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
 
 
 
@@ -284,8 +388,15 @@
             }
 
             #logo {
-                width: 33%;
+                width: 30%;
+                top: 0.6%;
             }
+
+            #menuknap {
+
+                margin: -6px 0px 0px 0px;
+            }
+
 
 
 
@@ -299,6 +410,7 @@
             h2 {
 
                 margin: 0px 0px 0px 40px;
+                font-size: 1rem;
             }
 
             p {
@@ -319,12 +431,13 @@
 
 
             #logo {
-                width: 10%;
+                width: 13%;
+                top: 0.4%;
             }
 
             #hent_cv {
 
-                margin: 30px 0px 9px 60px;
+                margin: 30px 0px 9px 40px;
 
 
             }
@@ -333,7 +446,7 @@
 
 
 
-                padding: 18px 0px 0px 600px;
+                padding: 18px 0px 0px 660px;
                 margin: 10px 0px 9px 0px;
 
             }
@@ -350,6 +463,52 @@
                 width: 100%;
                 height: 5%;
             }
+
+            #popup {
+
+                width: 100%;
+                height: 100%;
+
+
+
+
+
+                background-color: rgba(0, 0, 0, 0.71);
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 99;
+                /*            margin: 85px 0px 0px 0px;*/
+
+            }
+
+
+            .popup_ramme {
+
+                margin: 200px 100px 0px 100px;
+            }
+
+            .popup_beskrivelse {
+                margin: 20px 100px 0px 100px;
+
+            }
+
+            #menuknap {
+
+                margin: -12px 0px 0px 0px;
+            }
+
+
+
+            #luk button {
+
+                position: absolute;
+                top: 130px;
+                right: 15px;
+                margin-right: 103px;
+
+            }
+
 
         }
 
@@ -376,21 +535,82 @@
 
                 width: 100%;
                 height: 4.3%;
+
+
             }
 
+            #links {
+
+                line-height: 213px;
+            }
+
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 15px;
+                text-align: left;
+                margin-left: 57px;
+                margin-right: 25px;
+                font-size: 1.35rem;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            #logo {
+                cursor: pointer;
+                position: absolute;
+                width: 119px;
+                left: 10px;
+
+
+
+                top: 10px;
+
+
+            }
+
+            #popup {
+
+                width: 100%;
+                height: 100%;
+
+
+
+
+
+                background-color: rgba(0, 0, 0, 0.71);
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 99;
+                /*            margin: 85px 0px 0px 0px;*/
+
+            }
+
+
+            .popup_ramme {
+
+                margin: 220px 600px 0px 600px;
+            }
+
+            .popup_beskrivelse {
+                margin: 20px 600px 0px 600px;
+
+            }
+
+            #luk button {
+
+                position: absolute;
+                top: 150px;
+                right: 516px;
+                margin-right: 103px;
+
+            }
+
+
         }
 
-        h2 {
-
-            margin: 0px 0px 0px 97px;
-        }
-
-        p {
-
-            margin: 10px 0px 10px 97px;
 
 
-        }
+
 
 
         @media only screen and (min-width: 1680px) {
@@ -431,8 +651,9 @@
             }
 
             #logo {
+                cursor: pointer;
 
-                width: 248px;
+                width: 237px;
 
             }
 
@@ -453,6 +674,61 @@
             }
 
 
+            #menuknap {
+
+                display: none;
+
+            }
+
+            #popup {
+
+                width: 100%;
+                height: 100%;
+
+
+
+
+
+                background-color: rgba(0, 0, 0, 0.71);
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 99;
+                /*            margin: 85px 0px 0px 0px;*/
+
+            }
+
+
+            .popup_ramme {
+
+                margin: 150px 500px 0px 500px;
+            }
+
+            .popup_beskrivelse {
+                margin: 20px 500px 0px 500px;
+
+            }
+
+            #luk button {
+
+                position: absolute;
+                top: 85px;
+                right: 41px;
+                margin-right: 103px;
+
+            }
+
+
+
+
+        }
+
+        @media only screen and (max-width: 1679px) {
+
+            #links {
+
+                display: none;
+            }
         }
     </style>
 </head>
@@ -477,11 +753,17 @@
 -->
 
         <div id="logo">
-            <img src="logo/Laugiano_logo.svg" alt="logo">
+            <a href="forside.html"><img src="logo/Laugiano_logo.svg" alt="logo"></a>
         </div>
 
 
     </header>
+
+    <nav>
+
+
+
+    </nav>
 
 
     <div id="menuknap">☰</div>
@@ -489,13 +771,13 @@
         <li><a href="index_copy.html">Menu</a></li>
 
         <a>
-            <li>Forside</li>
             <a href="forside.html">
-                <li>Reservationer</li>
+                <li>Forside</li>
             </a>
 
-
-
+            <a>
+                <li>Reservationer</li>
+            </a>
         </a>
 
 
@@ -508,6 +790,17 @@
 
 
         <div id="splash_billede">
+
+            <div id="links">
+
+                <a href="Index_copy.html">MENU</a>
+                <a href="forside.html">FORSIDE</a>
+                <a>RESERVATIONER</a>
+
+
+
+            </div>
+
             <picture>
 
                 <!--                    <source media="(min-width: 1080px)" srcset="menu_splash/splash-assets/splash_desktop1.png">-->
@@ -518,7 +811,11 @@
 
                 <source media="(min-width: 375px)" srcset="menu_splash/mobil_header.png">
 
-                <img src="menu_splash/menu-assets/menubillede.jpg" alt="palmer">
+                <img src="menu_splash/splash-assets/splash.jpg" alt="palmer">
+
+
+
+
 
             </picture>
 
@@ -527,22 +824,26 @@
 
     </section>
 
-
-    <div class="menu">
-        <h1>Alle</h1>
-        <button class="filter" data-hold="forretter">Forretter</button>
-        <button class="filter" data-hold="hovedretter">Hovedretter</button>
-        <button class="filter" data-hold="desserter">Desserter</button>
-        <button class="filter" data-hold="drikkevarer">Drikkevarer</button>
-
-    </div>
+    <section id="om">
 
 
+        <div class="menu">
+            <h1>Alle</h1>
+            <button class="filter" data-hold="forretter">Forretter</button>
+            <button class="filter" data-hold="hovedretter">Hovedretter</button>
+            <button class="filter" data-hold="desserter">Desserter</button>
+            <button class="filter" data-hold="drikkevarer">Drikkevarer</button>
 
-    <main>
+        </div>
 
-        <div id="liste"></div>
-    </main>
+
+
+        <main>
+
+            <div id="liste"></div>
+        </main>
+
+    </section>
 
 
     <script>
@@ -585,11 +886,13 @@
                         function åbn() {
                             document.querySelector("#indhold").innerHTML =
                                 `<article class="retter">
-<img src="Billeder_navngivet/${eachRetter.billede}.jpg" alt="${eachRetter.navn}">
+<div class="popup_ramme"> <img src="Billeder_navngivet/${eachRetter.billede}.jpg" alt="${eachRetter.navn}"> </div>
 
-<h2>${eachRetter.navn}</h2>
-<p>${eachRetter.lang} </p>
+<div class="popup_beskrivelse"> <h2>${eachRetter.navn}</h2>
+<p>${eachRetter.kort} </p>
 <p>Pris: ${eachRetter.pris}</p>
+
+    </div>
     </article>`;
                             document.querySelector("#popup").style.display = "block";
 
